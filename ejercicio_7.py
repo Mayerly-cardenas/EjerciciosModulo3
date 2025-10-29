@@ -1,4 +1,5 @@
 """
+BLOQUE 2
 Ejercicio_7
 
     Este módulo filtra una lista de estudiantes utilizando la función filter()

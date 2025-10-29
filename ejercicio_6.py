@@ -1,4 +1,5 @@
 """
+BLOQUE 2
 Ejercicio_6
 
     Este módulo aplica un descuento del 10% a una lista de productos

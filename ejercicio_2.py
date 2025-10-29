@@ -1,4 +1,5 @@
 """
+BLOQUE 1
 Ejercicio 2: Generador de Perfiles de Usuario con Argumentos Flexibles
 
 Este módulo contiene la función crear_perfil, que genera un perfil de usuario

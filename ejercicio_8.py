@@ -1,4 +1,5 @@
 """
+BLOQUE 2
 Ejercicio_8
 
     Este módulo procesa un texto y aplica transformaciones utilizando

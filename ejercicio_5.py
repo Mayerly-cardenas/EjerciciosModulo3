@@ -1,4 +1,5 @@
 """
+BLOQUE 1
 Ejercicio 5: Calculadora de Impuestos con Scope Global
 
 Este módulo simula el cálculo de impuestos (IVA) donde la tasa puede cambiar.

@@ -1,4 +1,5 @@
 """
+BLOQUE 1
 Ejercicio 4: Validador de Datos Genérico
 
 Este módulo implementa una función de orden superior que aplica un validador

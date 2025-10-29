@@ -1,3 +1,10 @@
+"""
+BLOQUE 1
+Ejercicio 1: Refactorización de Calculadora de IMC
+
+"""
+
+
 from rich.console import Console
 
 console = Console()

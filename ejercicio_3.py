@@ -1,4 +1,5 @@
 """
+BLOQUE 1
 Ejercicio 3: Contador de Llamadas con Closure
 
 Este módulo implementa una fábrica de contadores usando funciones anidadas
