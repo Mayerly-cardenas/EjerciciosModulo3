@@ -21,12 +21,13 @@ def crear_perfil(nombre: str, edad: int, *hobbies: str, **redes_sociales: str) -
     Retorna:
         str: Una cadena formateada con toda la información del perfil.
     """
-    perfil = f"👤 Perfil de {nombre} ({edad} años)\n"
+    perfil = f" Perfil de {nombre} ({edad} años)\n"
 
     if hobbies:
         perfil += " Hobbies:\n"
         for hobby in hobbies:
             perfil += f"   - {hobby}\n"
+
     else:
         perfil += " Hobbies: Ninguno registrado\n"
 
