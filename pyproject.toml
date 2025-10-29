@@ -1,7 +1,19 @@
 [project]
 name = "ejerciciosmodulo3"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+description = "Ejercicios del Módulo 3"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=14.2.0",
+]
+
+[tool.uv.dependencies]
+pytest = "*"
+ruff = "*"
+rich = "*"
+
+[tool.ruff]
+select = ["E", "F", "W"]
+ignore = []
+line-length = 88
+target-version = "py310"
