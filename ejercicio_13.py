@@ -36,10 +36,10 @@ def agregar_producto(inventario: list, nombre: str, cantidad: int, precio: float
     for producto in inventario:
         if producto["nombre"].lower() == nombre.lower():
             producto["cantidad"] += cantidad
-            print(f"✅ Se actualizó la cantidad de {nombre}. Nueva cantidad: {producto['cantidad']}")
+            print(f" Se actualizó la cantidad de {nombre}. Nueva cantidad: {producto['cantidad']}")
             return
     inventario.append({"nombre": nombre, "cantidad": cantidad, "precio": precio})
-    print(f"🟢 Producto '{nombre}' agregado correctamente.")
+    print(f" Producto '{nombre}' agregado correctamente.")
 
 
 def vender_producto(inventario: list, nombre: str, cantidad: int) -> None:
@@ -48,24 +48,24 @@ def vender_producto(inventario: list, nombre: str, cantidad: int) -> None:
         if producto["nombre"].lower() == nombre.lower():
             if producto["cantidad"] >= cantidad:
                 producto["cantidad"] -= cantidad
-                print(f"💰 Venta realizada: {cantidad} unidades de {nombre}.")
+                print(f" Venta realizada: {cantidad} unidades de {nombre}.")
                 if producto["cantidad"] == 0:
                     inventario.remove(producto)
-                    print(f"⚠️ Producto '{nombre}' agotado y eliminado del inventario.")
+                    print(f"️ Producto '{nombre}' agotado y eliminado del inventario.")
             else:
-                print(f"❌ No hay suficiente cantidad de {nombre}. Disponible: {producto['cantidad']}")
+                print(f" No hay suficiente cantidad de {nombre}. Disponible: {producto['cantidad']}")
             return
-    print(f"❌ Producto '{nombre}' no encontrado.")
+    print(f" Producto '{nombre}' no encontrado.")
 
 
 def mostrar_inventario(inventario: list) -> None:
     """Muestra el inventario en una tabla con Rich."""
     console = Console()
     if not inventario:
-        console.print("[yellow]⚠️ El inventario está vacío.[/yellow]")
+        console.print("[yellow] El inventario está vacío.[/yellow]")
         return
 
-    tabla = Table(title="📦 Inventario Actual")
+    tabla = Table(title=" Inventario Actual")
     tabla.add_column("Nombre", justify="left", style="cyan")
     tabla.add_column("Cantidad", justify="center", style="magenta")
     tabla.add_column("Precio", justify="right", style="green")
